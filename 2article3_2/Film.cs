@@ -8,6 +8,12 @@ namespace _2article3_2
 {
     class Film: Content
     {
+        public Film(string title, string description, string director, List<string> actors)
+            :base (title, description)
+        {
+            Director = director;
+            Actors = actors;
+        }
         public string Director { get; set; }
         public List<string> Actors { get; set; }
 

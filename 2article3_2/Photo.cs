@@ -8,6 +8,12 @@ namespace _2article3_2
 {
     class Photo : Content
     {
+        public Photo(string title, string description, int height, int width)
+            :base(title, description)
+        {
+            Height = height;
+            Width = width;
+        }
         public int Height { get; set; }
         public int Width { get; set; }
 

@@ -10,36 +10,21 @@ namespace _2article3_2
     {
         static void Main(string[] args)
         {
-            Photo photo1 = new Photo();
-            photo1.Title = "Закат";
-            photo1.Description = "Эта фотография была сделана в России в 1956 году";
-            photo1.Height = 1280;
-            photo1.Width = 960;
+            Photo photo1 = new Photo("Закат", "Эта фотография была сделана в России в 1956 году", 1280, 960);
             photo1.PrintFullInfo();
             Console.WriteLine();
 
-            Film film1 = new Film();
-            film1.Title = "Форрест Гамп";
-            film1.Description = "Этот фильм был снят в 1994 году про персонажа,с открытым сердцем, абстроированного от человеческой жестокости и грубости";
-            film1.Director = "Роберт Земекис";
-            film1.Actors.Add("Том Хэнкс");
+            List<string> actors = new List<string>();
+            actors.Add("Том Хэнкс");
+            Film film1 = new Film("Форрест Гамп", "Этот фильм был снят в 1994 году про персонажа,с открытым сердцем, абстроированного от человеческой жестокости и грубости", "Роберт Земекис", actors);
             film1.PrintFullInfo();
             Console.WriteLine();
 
-            Song song1 = new Song();
-            song1.Title = "Иванушки Иванушки Иванушки";
-            song1.Description = "Песня была записана в Москве";
-            song1.Band = "Иванушки";
-            song1.Year = 1999;
-            song1.Album = "Иванушки Иванушки";
+            Song song1 = new Song("Иванушки Иванушки Иванушки", "Песня была записана в Москве","Иванушки", 1999, "Иванушки Иванушки");
             song1.PrintFullInfo();
             Console.WriteLine();
 
-            Book book1 = new Book();
-            book1.Title = "Россия";
-            book1.Description = "Книга была написана в 1871 году в лесу";
-            book1.Autor = "Л. Н. Толстой";
-            book1.PageNum = 1000;
+            Book book1 = new Book("Россия", "Книга была написана в 1871 году в лесу", "Л. Н. Толстой",1000);
             book1.PrintFullInfo();
         }
     }
