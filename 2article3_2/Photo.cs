@@ -27,7 +27,7 @@ namespace _2article3_2
                 if (value == 0) _height = 500;
                 else if (value < 1) _height = 500;
                 else if (value > 5000) _height = 500;
-                else Height = _height;
+                else value = _height;
             }
         }
         public int Width 
@@ -41,7 +41,7 @@ namespace _2article3_2
                 if (value == 0) _width = 500;
                 else if (value < 1) _width = 500;
                 else if (value > 5000) _width = 500;
-                else Width = _width;
+                else value = _width;
             }
         }
 

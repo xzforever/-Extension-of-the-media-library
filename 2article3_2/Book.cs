@@ -26,7 +26,7 @@ namespace _2article3_2
             set
             {
                 if (value == "") _autor = "-";
-                else Autor = _autor;
+                else value = _autor;
             }
         }
         public int PageNum 
@@ -40,7 +40,7 @@ namespace _2article3_2
                 if (value == 0) _pageNum = 342;
                 else if (value < 5) _pageNum = 342;
                 else if (value > 9000) _pageNum = 342;
-                else PageNum = _pageNum;
+                else value = _pageNum;
             }
         }
         public void PrintFullInfo()

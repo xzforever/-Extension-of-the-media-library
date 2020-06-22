@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace _2article3_2
 {
@@ -27,7 +28,7 @@ namespace _2article3_2
             set
             {
                 if (value == "") _band = "-";
-                else Band = _band;
+                else value = _band;
             }
         }
         public int Year 
@@ -41,7 +42,7 @@ namespace _2article3_2
                 if (value == 0) _year = 1990;
                 else if (value < 1900) _year = 1990;
                 else if (value > 2035) _year = 1990;
-                else Year = _year;
+                else value = _year;
             }
         }
         public string Album 
@@ -53,7 +54,7 @@ namespace _2article3_2
             set
             {
                 if (value == "") _album = "-";
-                else Album = _album;
+                else value = _album;
             }
         }
 
